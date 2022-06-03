@@ -10,7 +10,7 @@ int main(){
   void *psm;
   int shmid;
   
-  shmid = shmget((key_t) 1122,1024,0666);
+  shmid = shmget((key_t) 1234,1024,0666);
   printf("The shared memory id is %d\n",shmid);
   psm = shmat(shmid,NULL,0666);
   printf("Memory address is attached to the address %p\n",psm);

@@ -11,7 +11,7 @@ int main(){
   int shmid;
   char buf[10];
   
-  shmid = shmget((key_t) 1122,1024,0666|IPC_CREAT);
+  shmid = shmget((key_t) 1234,1024,0666|IPC_CREAT);
   printf("The shared memory id is %d\n",shmid);
   psm = shmat(shmid,NULL,0666);
   printf("Memory address is attached to the address %p\n",psm);
