@@ -20,17 +20,13 @@ int main(int argc,int *argv[]){
   n1 = 0;
   n2 = 1;
 
-  if(i == 1){
     sprintf(ptr,"%d  ",n1);
     ptr += strlen(ptr);
     printf("%d  ",n1);
-  }
 
-  if(i == 2){
     sprintf(ptr,"%d  ",n2);
     ptr += strlen(ptr);
     printf("%d  ",n2);
-  }
 
   while(k<i){
     n3 = n1+n2;
