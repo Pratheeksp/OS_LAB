@@ -4,7 +4,7 @@ declare -A X
 declare -A Y
 declare -A Z
 
-echo "Enter the size of the matrix:"
+echo "Enter the size of the matrix: "
 read m
 read n
 

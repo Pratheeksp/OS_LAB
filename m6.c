@@ -1,0 +1,1 @@
+Though several etymologies have been suggested for the name Karnataka, the generally accepted one is that Karnataka is derived from the Kannada words karu and nādu, meaning "elevated land". Karu Nadu may also be read as karu, meaning "black" and nadu, meaning "region", as a reference to the black cotton soil found in the Bayalu Seeme region of the state

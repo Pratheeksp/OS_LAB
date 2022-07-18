@@ -39,7 +39,7 @@ int main(int argc,int *argv[]){
 
   else if(pid > 0){
     wait(NULL);
-    printf("Parent: Child completed\n");
+    printf("Parent: Child completed");
     shm_fd = shm_open("OS1",O_RDONLY,0666);
     ptr = mmap(0,SIZE,PROT_READ,MAP_SHARED,shm_fd,0);
     printf("\nParent is printing:\n");

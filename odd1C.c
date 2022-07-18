@@ -25,4 +25,5 @@ int main(int argc,int *argv[]){
     k++;    
     n = n+2;
   }
+  printf("\n");
 }
