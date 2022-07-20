@@ -32,7 +32,6 @@ void sortPT(p *a,int n){
                 temp = a[i];
                 a[i] = a[j];
                 a[j] = temp;
-                burst = burst-a[i].bt+a[j].bt;
             }
 
             if(a[j].at == a[i].at){
@@ -40,7 +39,6 @@ void sortPT(p *a,int n){
                     temp = a[i];
                     a[i] = a[j];
                     a[j] = temp;
-                    burst = burst-a[i].bt+a[j].bt;
                 }
             }
         }
