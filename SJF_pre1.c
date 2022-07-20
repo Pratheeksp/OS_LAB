@@ -42,7 +42,7 @@ void sortBT(pro a[],int start,int end){
 }
 
 void preemtive(pro a[]){
-    if(a[startRq].bt >= 0)
+    if(a[startRq].bt != 0)
         a[startRq].bt--;
     
     if(a[startRq].bt == 0){
