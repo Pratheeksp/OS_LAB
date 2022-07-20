@@ -29,7 +29,7 @@ void CT(p *a,int n){
 
     for(int i=1;i<n;i++){
         if(ct < a[i].at){
-            ct += (a[i].at - ct);
+            ct = a[i].at;
         }
         ct += a[i].bt;
         a[i].ct = ct;
