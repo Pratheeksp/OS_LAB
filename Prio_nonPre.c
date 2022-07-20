@@ -28,7 +28,7 @@ void sortPT(p *a,int n){
 
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
-            if((a[i].pt > a[j].pt) && (a[j].at < burst)){
+            if((a[i].pt > a[j].pt) && (a[j].at <= burst)){
                 temp = a[i];
                 a[i] = a[j];
                 a[j] = temp;
