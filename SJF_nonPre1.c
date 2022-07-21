@@ -28,11 +28,10 @@ void sortBT(p *a,int n){
 
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
-            if((a[i].bt > a[j].bt) && (a[j].at < burst)){
+            if((a[i].bt > a[j].bt) && (a[j].at <= burst)){
                 temp = a[i];
                 a[i] = a[j];
                 a[j] = temp;
-                burst = burst-a[i].bt+a[j].bt;
             }
 
             if(a[j].at == a[i].at){
@@ -40,7 +39,6 @@ void sortBT(p *a,int n){
                     temp = a[i];
                     a[i] = a[j];
                     a[j] = temp;
-                    burst = burst-a[i].bt+a[j].bt;
                 }
             }
         }
@@ -55,7 +53,7 @@ void CT(p *a,int n){
 
     for(int i=1;i<n;i++){
         if(ct < a[i].at){
-            ct += (a[i].at - ct);
+            ct = a[i].at;
         }
         ct += a[i].bt;
         a[i].ct = ct;

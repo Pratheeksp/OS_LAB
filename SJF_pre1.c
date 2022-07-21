@@ -31,7 +31,7 @@ void sortBT(pro a[],int start,int end){
                 swap(&a[i],&a[j]);
 
             else if(a[i].bt == a[j].bt && i!=j && a[i].bt != 0){
-                if(a[i].at > a[j].bt)
+                if(a[i].at > a[j].at)
                     swap(&a[i],&a[j]);
                 else if(a[i].at == a[i].at)
                     if(a[i].pid > a[j].pid)
@@ -42,7 +42,7 @@ void sortBT(pro a[],int start,int end){
 }
 
 void preemtive(pro a[]){
-    if(a[startRq].bt >= 0)
+    if(a[startRq].bt != 0)
         a[startRq].bt--;
     
     if(a[startRq].bt == 0){
